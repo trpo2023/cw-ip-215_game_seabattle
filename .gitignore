@@ -1,0 +1,25 @@
+# Python
+*.pyc
+__pycache__/
+
+# macOS
+.DS_Store
+
+# User-specific files
+*.sublime-workspace
+*.iml
+*.idea/
+.vscode/
+
+# tkinter
+*.png
+
+# Compiled files
+*.exe
+*.dll
+*.so
+*.out
+
+# Miscellaneous
+*.log
+*.swp
