@@ -26,6 +26,7 @@ point_list = []  # список, куда мы кликнули мышкой
 
 menu_x = 250
 
+icon_tag = "battleship.png"
 # points - список куда мы кликнули мышкой
 points = [[-1 for i in range(s_x)] for i in range(s_y)]
 
@@ -170,6 +171,7 @@ icons()
 def generate_enemy_ships():
     global enemy_ships
     ships_list = []
+    sl_type = isinstance(ships_list, list)
     # генерируем список случайных длин кораблей
     for i in range(0, ships):
         ships_list.append(random.choice([ship_len1, ship_len2, ship_len3]))
@@ -234,7 +236,7 @@ def generate_enemy_ships():
             for j in range(0, s_y):
                 if enemy_ships[j][i] > 0:
                     sum_1_enemy = sum_1_enemy + 1
-
+    return sl_type
 
 generate_enemy_ships()
 
